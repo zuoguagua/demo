@@ -1,0 +1,8 @@
+#!/usr/bin/python -u 
+
+
+import test_local
+
+if __name__ == "__main__":
+	app = test_local.AutotestLocalApp()
+	app.main()
