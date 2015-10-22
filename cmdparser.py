@@ -3,7 +3,10 @@
 
 """
 DEBUG = False
+import os 
+import re
 
+LOCALDIRTEST = "tests"
 
 class CommandParser(object):
 
@@ -40,3 +43,24 @@ class CommandParser(object):
 			sys.exit(1)
 
 		return args
+	
+	def run(self,args,options):
+		print "run"
+		if not len(args):
+			self.help()
+
+		test = args.pop(0)
+		print "test:",test
+		if not re.search("control",test):
+			test = test+"/control"
+	
+		localdir = os.path.join(os.path.abspath(os.path.curdir),LOCALDIRTEST)
+		print "localdir:",localdir
+		if localdir:
+			d = os.path.join(localdir,test)
+			print "d:",d
+			if os.path.isfile(d):
+				args.insert(0,d)
+				return args
+
+
