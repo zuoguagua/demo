@@ -1,0 +1,105 @@
+<vms>
+    <vm href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486" id="181ff89b-1607-49c1-a31e-8834de226486">
+        <actions>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/reboot" rel="reboot"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/migrate" rel="migrate"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/ticket" rel="ticket"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/move" rel="move"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/clone" rel="clone"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/commit_snapshot" rel="commit_snapshot"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/preview_snapshot" rel="preview_snapshot"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/logon" rel="logon"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/cancelmigration" rel="cancelmigration"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/maintenance" rel="maintenance"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/undo_snapshot" rel="undo_snapshot"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/detach" rel="detach"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/export" rel="export"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/shutdown" rel="shutdown"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/start" rel="start"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/stop" rel="stop"/>
+            <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/suspend" rel="suspend"/>
+        </actions>
+        <name>zhufan</name>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/applications" rel="applications"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/disks" rel="disks"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/nics" rel="nics"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/numanodes" rel="numanodes"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/cdroms" rel="cdroms"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/snapshots" rel="snapshots"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/tags" rel="tags"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/permissions" rel="permissions"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/statistics" rel="statistics"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/reporteddevices" rel="reporteddevices"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/watchdogs" rel="watchdogs"/>
+        <link href="/api/vms/181ff89b-1607-49c1-a31e-8834de226486/sessions" rel="sessions"/>
+        <type>server</type>
+        <status>
+            <state>down</state>
+        </status>
+        <memory>1073741824</memory>
+        <cpu>
+            <topology sockets="2" cores="1"/>
+            <architecture>X86_64</architecture>
+        </cpu>
+        <cpu_shares>0</cpu_shares>
+        <bios>
+            <boot_menu>
+                <enabled>true</enabled>
+            </boot_menu>
+        </bios>
+        <os type="windows_2008">
+            <boot dev="hd"/>
+            <boot dev="cdrom"/>
+        </os>
+        <high_availability>
+            <enabled>false</enabled>
+            <priority>1</priority>
+        </high_availability>
+        <display>
+            <type>spice</type>
+            <monitors>1</monitors>
+            <single_qxl_pci>false</single_qxl_pci>
+            <allow_override>false</allow_override>
+            <smartcard_enabled>false</smartcard_enabled>
+            <file_transfer_enabled>true</file_transfer_enabled>
+            <copy_paste_enabled>true</copy_paste_enabled>
+        </display>
+        <cluster href="/api/clusters/008dd8d0-ddb7-49a9-8514-51085685586a" id="008dd8d0-ddb7-49a9-8514-51085685586a"/>
+        <template href="/api/templates/00000000-0000-0000-0000-000000000000" id="00000000-0000-0000-0000-000000000000"/>
+        <stop_time>2015-10-20T02:58:34.282-04:00</stop_time>
+        <creation_time>2015-09-06T06:21:49.713-04:00</creation_time>
+        <origin>ovirt</origin>
+        <stateless>false</stateless>
+        <delete_protected>false</delete_protected>
+        <sso>
+            <methods>
+                <method id="GUEST_AGENT"/>
+            </methods>
+        </sso>
+        <timezone>GMT Standard Time</timezone>
+        <domain>
+            <name>cmh.org</name>
+        </domain>
+        <initialization>
+            <domain>cmh.org</domain>
+            <authorized_ssh_keys></authorized_ssh_keys>
+            <regenerate_ssh_keys>false</regenerate_ssh_keys>
+            <nic_configurations/>
+            <custom_script></custom_script>
+        </initialization>
+        <placement_policy>
+            <host href="/api/hosts/d53cb997-00b9-4680-b7cf-4bc9793558e9" id="d53cb997-00b9-4680-b7cf-4bc9793558e9"/>
+            <affinity>pinned</affinity>
+        </placement_policy>
+        <memory_policy>
+            <guaranteed>715128832</guaranteed>
+        </memory_policy>
+        <usb>
+            <enabled>false</enabled>
+        </usb>
+        <migration_downtime>-1</migration_downtime>
+        <cpu_profile href="/api/cpuprofiles/3f14d08e-4573-4d73-88b3-4cccdff9844f" id="3f14d08e-4573-4d73-88b3-4cccdff9844f"/>
+        <next_run_configuration_exists>false</next_run_configuration_exists>
+        <numa_tune_mode>interleave</numa_tune_mode>
+    </vm>
+</vms>
