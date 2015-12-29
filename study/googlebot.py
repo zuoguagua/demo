@@ -15,11 +15,13 @@ def getImg(html):
     imglist = re.findall(image,html)
     x = 0 
     for imgurl in imglist:
-        urllib.urlretrieve(imgurl,'%s.jpg'%x)
-        x+=1
+        print imgurl
+    #for imgurl in imglist:
+    #    urllib.urlretrieve(imgurl,'%s.jpg'%x)
+    #    x+=1
     #return imglist
     
 
 if __name__ == "__main__":
-    html = getHtml("http://tieba.baidu.com/p/3545397417")
-    print getImg(html)
+    html = getHtml("http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=baidu")
+    getImg(html)
