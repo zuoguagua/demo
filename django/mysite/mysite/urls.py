@@ -18,5 +18,15 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$','learn.views.index',name='home'),
     url(r'^admin/', admin.site.urls),
+    url(r'^Autoclient/','Autoclient.views.home',name='home'),
+    url(r'^jobs/','Autoclient.views.jobs'),
+    url(r'^system','Autoclient.views.system'),
+
+
+
+
+    url(r'^learn','learn.views.index'),
+
 ]
