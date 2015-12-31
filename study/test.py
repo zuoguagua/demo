@@ -9,3 +9,9 @@ keys = dd.keys()
 print items.sort()
 print [dd[key] for key in keys]
 print result
+
+
+
+_letter_cases = "qqqq"
+
+print _letter_cases
