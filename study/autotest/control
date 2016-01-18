@@ -1,0 +1,12 @@
+AUTHOR = "Autotest Team"
+NAME = "Stop"
+TIME = "Mem"
+TEST_CATEGORY = "Functional"
+TEST_CLASS = "General"
+TEST_TYPE = "client"
+
+DOC = """
+setmem  when vm is running  
+"""
+
+job.run_test('vm_stop')
